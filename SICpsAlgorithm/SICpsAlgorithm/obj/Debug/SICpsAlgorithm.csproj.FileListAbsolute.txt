@@ -1,0 +1,11 @@
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\SICpsAlgorithm.exe.config
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\SICpsAlgorithm.exe
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\SICpsAlgorithm.pdb
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\Newtonsoft.Json.dll
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\Newtonsoft.Json.xml
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.csprojResolveAssemblyReference.cache
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.Properties.Resources.resources
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.csproj.GenerateResource.Cache
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.exe
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.pdb
+c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.Form1.resources

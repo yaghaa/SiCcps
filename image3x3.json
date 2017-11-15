@@ -1,0 +1,12 @@
+{
+    "Columns": [
+        { "ColoredBlocks": [1, 1] },
+        { "ColoredBlocks": [2] },
+        { "ColoredBlocks": [1, 1] }
+    ],
+    "Rows": [
+        { "ColoredBlocks": [3] },
+        { "ColoredBlocks": [1] },
+        { "ColoredBlocks": [1, 1] }
+    ]
+}

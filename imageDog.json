@@ -1,0 +1,31 @@
+{
+    "Columns": [
+        { "ColoredBlocks": [2] },
+        { "ColoredBlocks": [2] },
+        { "ColoredBlocks": [4] },
+        { "ColoredBlocks": [3, 5] },
+        { "ColoredBlocks": [8] },
+        { "ColoredBlocks": [6] },
+        { "ColoredBlocks": [6] },
+        { "ColoredBlocks": [6] },
+        { "ColoredBlocks": [6] },
+        { "ColoredBlocks": [7] },
+        { "ColoredBlocks": [7] },
+        { "ColoredBlocks": [6] },
+        { "ColoredBlocks": [4] },
+        { "ColoredBlocks": [1, 1] },
+        { "ColoredBlocks": [2] }
+    ],
+    "Rows": [
+        { "ColoredBlocks": [0] },
+        { "ColoredBlocks": [1, 1] },
+        { "ColoredBlocks": [2, 1] },
+        { "ColoredBlocks": [9, 1] },
+        { "ColoredBlocks": [1, 10] },
+        { "ColoredBlocks": [13] },
+        { "ColoredBlocks": [13] },
+        { "ColoredBlocks": [11] },
+        { "ColoredBlocks": [9] },
+        { "ColoredBlocks": [2, 2] }
+    ]
+}

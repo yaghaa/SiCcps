@@ -1,0 +1,26 @@
+{
+    "Columns": [
+        { "ColoredBlocks": [1] },
+        { "ColoredBlocks": [2] },
+        { "ColoredBlocks": [1, 6] },
+        { "ColoredBlocks": [9] },
+        { "ColoredBlocks": [6] },
+        { "ColoredBlocks": [5] },
+        { "ColoredBlocks": [5] },
+        { "ColoredBlocks": [4] },
+        { "ColoredBlocks": [3] },
+        { "ColoredBlocks": [4] }
+    ],
+    "Rows": [
+        { "ColoredBlocks": [2] },
+        { "ColoredBlocks": [1, 1] },
+        { "ColoredBlocks": [4] },
+        { "ColoredBlocks": [2, 1] },
+        { "ColoredBlocks": [3, 1] },
+        { "ColoredBlocks": [8] },
+        { "ColoredBlocks": [8] },
+        { "ColoredBlocks": [7] },
+        { "ColoredBlocks": [5] },
+        { "ColoredBlocks": [3] }
+    ]
+}
