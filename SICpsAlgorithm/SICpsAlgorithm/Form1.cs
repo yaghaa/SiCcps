@@ -74,6 +74,7 @@ namespace SICpsAlgorithm
             watch.Start();
             revolver.Resolve(ref image);
             watch.Stop();
+            textBox1.Text = watch.Elapsed.ToString();
             img = image;
             groupBox1.Refresh();
             AddImages();

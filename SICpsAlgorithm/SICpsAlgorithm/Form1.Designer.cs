@@ -33,6 +33,7 @@
             this.shortestDomain = new System.Windows.Forms.ComboBox();
             this.algorithmType = new System.Windows.Forms.ComboBox();
             this.images = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -89,11 +90,21 @@
             this.images.Size = new System.Drawing.Size(121, 21);
             this.images.TabIndex = 4;
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(2, 375);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 408);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.images);
             this.Controls.Add(this.algorithmType);
             this.Controls.Add(this.shortestDomain);
@@ -103,6 +114,7 @@
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
     }
 
@@ -113,6 +125,7 @@
         private System.Windows.Forms.ComboBox shortestDomain;
         private System.Windows.Forms.ComboBox algorithmType;
         private System.Windows.Forms.ComboBox images;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

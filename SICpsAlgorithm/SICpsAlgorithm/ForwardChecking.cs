@@ -360,10 +360,6 @@ namespace SICpsAlgorithm
                                 break;
                             }
                         }
-                        else
-                        {
-                            break;
-                        }
                     }
                     if (!isDifferent)
                     {
@@ -392,10 +388,6 @@ namespace SICpsAlgorithm
                                 isDifferent = true;
                                 break;
                             }
-                        }
-                        else
-                        {
-                            break;
                         }
                     }
                     if (!isDifferent)
