@@ -9,3 +9,14 @@ c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorit
 c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.exe
 c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.pdb
 c:\users\agata\documents\visual studio 2017\Projects\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.Form1.resources
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\SICpsAlgorithm.exe.config
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\SICpsAlgorithm.exe
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\SICpsAlgorithm.pdb
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\Newtonsoft.Json.dll
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\bin\Debug\Newtonsoft.Json.xml
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.csprojResolveAssemblyReference.cache
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.Form1.resources
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.Properties.Resources.resources
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.csproj.GenerateResource.Cache
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.exe
+C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\SICpsAlgorithm\SICpsAlgorithm\obj\Debug\SICpsAlgorithm.pdb

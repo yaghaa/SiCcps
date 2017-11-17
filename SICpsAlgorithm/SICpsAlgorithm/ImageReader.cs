@@ -34,7 +34,7 @@ namespace SICpsAlgorithm
           x.Fields.Add(new Field());
         }
       });
-
+      image.Name = path.Replace(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\","");
       return image;
     }
   }
