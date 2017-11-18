@@ -19,7 +19,7 @@ namespace SICpsAlgorithm
         {
             InitializeComponent();
 
-            shortestDomain.DataSource = new[] { "Shortest Domain", "Regular" };
+            shortestDomain.DataSource = new[] { "Regular", "Shortest Domain" };
             algorithmType.DataSource = new[] { "BackTracking", "ForwardChecking" };
 
             AddImages();
@@ -33,33 +33,26 @@ namespace SICpsAlgorithm
                 selectedIndex = images.SelectedIndex;
             }
             var imageReader = new ImageReader();
-            var image = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\imageDog.json");
             var image2 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\image3x3.json");
+            var image = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\imageDog.json");
             var image3 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\imageLog2.json");
             var image4 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\image.json");
             var image5 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\imageDuck.json");
-            var image6 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\imageHeart.json");
-            var image7 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\cat2.json");
             var image8 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\cat.json");
-            var image9 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\owl.json");
-            var image10 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\owl2.json");
             var list = new List<Image>();
-            list.Add(image);
             list.Add(image2);
+            list.Add(image);
             list.Add(image3);
             list.Add(image4);
             list.Add(image5);
-            list.Add(image6);
-            list.Add(image7);
             list.Add(image8);
-            list.Add(image9);
-            list.Add(image10);
             images.DataSource = list;
             images.SelectedIndex = selectedIndex;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ClearCounters();
             img = new Image();
             groupBox1.Refresh();
             var cDomains = new CreateDomains();
@@ -74,10 +67,20 @@ namespace SICpsAlgorithm
             watch.Start();
             revolver.Resolve(ref image);
             watch.Stop();
-            textBox1.Text = watch.Elapsed.ToString();
+            tbTime.Text = watch.Elapsed.ToString();
+            tbReccurency.Text = Counters.ReccurencyCounter.ToString();
+            tbReturns.Text = Counters.ReturnsCounter.ToString();
             img = image;
             groupBox1.Refresh();
             AddImages();
+        }
+
+        private void ClearCounters()
+        {
+            Counters.ReturnsCounter = 0;
+            Counters.ReccurencyCounter = 0;
+            tbReccurency.Text = Counters.ReccurencyCounter.ToString();
+            tbReturns.Text = Counters.ReturnsCounter.ToString();
         }
 
         private void groupBox1_Paint(object sender, PaintEventArgs e)

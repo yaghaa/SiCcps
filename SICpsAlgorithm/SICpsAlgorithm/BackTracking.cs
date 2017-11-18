@@ -9,6 +9,7 @@ namespace SICpsAlgorithm
     {
         public override void Resolve(ref Image image)
         {
+            Counters.ReccurencyCounter++;
             var variable = ShortestDomain ? GetFirstUnresolvedLowestDomainsCount(image) : GetFirstUnresolved(image);
 
             if (variable != null)
@@ -29,6 +30,7 @@ namespace SICpsAlgorithm
                             variable.Domains[index].Incorrect = true;
                             variable.Resolved = false;
                             variable.Fields.ForEach(x => x.Value = false);
+                            Counters.ReturnsCounter++;
                         }
                         else
                         {
@@ -51,6 +53,7 @@ namespace SICpsAlgorithm
 
                         if (!ColumnCheckConstraints(ref image, indexColumn))
                         {
+                            Counters.ReturnsCounter++;
                             variable.Domains[variable.Domains.IndexOf(domain)].Incorrect = true;
                             variable.Resolved = false;
                             variable.Fields.ForEach(x => x.Value = false);

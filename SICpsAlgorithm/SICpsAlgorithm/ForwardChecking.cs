@@ -10,7 +10,7 @@ namespace SICpsAlgorithm
         public override void Resolve(ref Image image)
         {
             var variable = ShortestDomain? GetFirstUnresolvedLowestDomainsCount(image): GetFirstUnresolved(image);
-
+            Counters.ReccurencyCounter++;
             if (variable != null)
             {
                 if (image.Rows.Contains(variable))
@@ -21,7 +21,6 @@ namespace SICpsAlgorithm
                     {
                         variable.Resolved = true;
                         variable.Fields = CopyDomainItem(domain.Fields);
-                        //SetDomainsIncorrectForRowIndex(variable, indexRow, ref image);
                         SetColumnDomainsIncorrect(variable, indexRow, ref image);
                         Resolve(ref image);
 
@@ -31,7 +30,7 @@ namespace SICpsAlgorithm
                             variable.Domains[variable.Domains.IndexOf(domain)].Incorrect = true;
                             variable.Resolved = false;
                             variable.Fields.ForEach(x => x.Value = false);
-                            //SetColumnDomainsCorrect(variable, indexRow, ref image);
+                            Counters.ReturnsCounter++;
                         }
                         else
                         {
@@ -49,7 +48,6 @@ namespace SICpsAlgorithm
                     {
                         variable.Resolved = true;
                         variable.Fields = CopyDomainItem(domain.Fields);
-                        //SetDomainsIncorrectForColumnIndex(variable, indexColumn, ref image);
                         SetRowDomainsIncorrect(variable, indexColumn, ref image);
                         Resolve(ref image);
 
@@ -59,7 +57,7 @@ namespace SICpsAlgorithm
                             variable.Domains[variable.Domains.IndexOf(domain)].Incorrect = true;
                             variable.Resolved = false;
                             variable.Fields.ForEach(x => x.Value = false);
-                            //SetRowDomainsCorrect(variable, indexColumn, ref image);
+                            Counters.ReturnsCounter++;
                         }
                         else
                         {
@@ -91,6 +89,10 @@ namespace SICpsAlgorithm
                     {
                         domain.Incorrect = true;
                     }
+                    else
+                    {
+                        domain.Incorrect = false;
+                    }
                 }
             }
         }
@@ -112,6 +114,10 @@ namespace SICpsAlgorithm
                     if (domain.Fields[indexRow].Value != variable.Fields[i].Value)
                     {
                         domain.Incorrect = true;
+                    }
+                    else
+                    {
+                        domain.Incorrect = false;
                     }
                 }
             }
@@ -243,10 +249,10 @@ namespace SICpsAlgorithm
             {
                 return false;
             }
-            if (image.Columns[index].Fields.Sum(x => (x.Value) ? 1 : 0) != image.Columns[index].ColoredBlocks.Sum())
-            {
-                return false;
-            }
+            //if (image.Columns[index].Fields.Sum(x => (x.Value) ? 1 : 0) != image.Columns[index].ColoredBlocks.Sum())
+            //{
+            //    return false;
+            //}
             foreach (var columnField in image.Columns[index].Fields)
             {
                 var fieldIndex = image.Columns[index].Fields.IndexOf(columnField);
@@ -265,10 +271,10 @@ namespace SICpsAlgorithm
             {
                 return false;
             }
-            if (image.Rows[currentRow].Fields.Sum(x => (x.Value) ? 1 : 0) != image.Rows[currentRow].ColoredBlocks.Sum())
-            {
-                return false;
-            }
+            //if (image.Rows[currentRow].Fields.Sum(x => (x.Value) ? 1 : 0) != image.Rows[currentRow].ColoredBlocks.Sum())
+            //{
+            //    return false;
+            //}
             foreach (var rowField in image.Rows[currentRow].Fields)
             {
                 var fieldIndex = image.Rows[currentRow].Fields.IndexOf(rowField);
