@@ -174,7 +174,6 @@ namespace SICpsAlgorithm
         }
         else
         {
-
           Domain.Add(CopyDomainItem(domainField));
           
           for (int i = START; i < SIZE; i++)

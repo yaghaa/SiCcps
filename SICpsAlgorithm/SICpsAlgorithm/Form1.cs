@@ -39,6 +39,7 @@ namespace SICpsAlgorithm
             var image4 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\image.json");
             var image5 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\imageDuck.json");
             var image8 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\cat.json");
+            var image9 = imageReader.GetImage(@"C:\aga\PWR\semestr 7\zpi\ZPI\SICcps\zaliczenie5x5.json");
             var list = new List<Image>();
             list.Add(image2);
             list.Add(image);
@@ -46,6 +47,7 @@ namespace SICpsAlgorithm
             list.Add(image4);
             list.Add(image5);
             list.Add(image8);
+            list.Add(image9);
             images.DataSource = list;
             images.SelectedIndex = selectedIndex;
         }
